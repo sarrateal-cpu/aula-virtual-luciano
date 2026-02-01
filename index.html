@@ -5,7 +5,7 @@
   <title>Aula Virtual – Jamulus + Google Meet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Fondo de toda la página */
+    /* Fondo general */
     body {
       font-family: Arial, sans-serif;
       background: url("Fondo.jpg") no-repeat center center fixed;
@@ -14,12 +14,12 @@
       padding: 0;
     }
 
-    /* Overlay semi-transparente para resaltar texto sobre el fondo */
+    /* Overlay con degradado marrón a blanco */
     .container {
       max-width: 800px;
       margin: auto;
       padding: 30px 20px;
-      background-color: rgba(255,255,255,0.9);
+      background: linear-gradient(to bottom, rgba(139,69,19,0.9), rgba(255,255,255,0.9));
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
@@ -28,7 +28,6 @@
       color: #222;
     }
 
-    /* Tarjetas */
     .card {
       background: white;
       border-radius: 12px;
@@ -37,7 +36,6 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
 
-    /* Botones */
     .button {
       display: block;
       text-align: center;
@@ -68,12 +66,10 @@
       margin-top: 15px;
     }
 
-    /* Centrado de texto general */
     .center {
       text-align: center;
     }
 
-    /* Ajustes para móviles */
     @media (max-width: 600px) {
       .container {
         padding: 20px 15px;
@@ -98,4 +94,55 @@
     </p>
 
     <div class="card">
-      <h2
+      <h2>1️⃣ Instalar Jamulus</h2>
+
+      <p>
+        Jamulus es el programa que usamos para tocar juntos en tiempo real.
+      </p>
+
+      <a class="button" href="https://jamulus.io/downloads/" target="_blank">
+        👉 Hacer click para descargar Jamulus
+      </a>
+
+      <ol>
+        <li>Hacé click en el botón azul.</li>
+        <li>Abajo de la pantalla va a aparecer el archivo descargado.</li>
+        <li>Hacé click en <strong>Abrir</strong>.</li>
+        <li>Aceptá todo hasta que termine la instalación.</li>
+        <li>Abrí Jamulus.</li>
+      </ol>
+
+      <div class="note">
+        💡 <strong>No hace falta ir a “Descargas”.</strong><br>
+        El archivo aparece solo abajo del navegador.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>2️⃣ Entrar a la clase (Google Meet)</h2>
+
+      <p>
+        Una vez que tengas Jamulus instalado, entrá a la clase.
+      </p>
+
+      <a class="button" href="https://meet.google.com/TU-LINK-AQUI" target="_blank">
+        🎥 Entrar a la clase por Google Meet
+      </a>
+
+      <div class="note">
+        📌 Si es tu primera vez, permití el uso de micrófono y cámara.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>3️⃣ Ya dentro de la clase</h2>
+      <ol>
+        <li>Usá auriculares.</li>
+        <li>El micrófono de Meet puede estar en silencio.</li>
+        <li>El audio musical va por Jamulus.</li>
+      </ol>
+    </div>
+
+  </div>
+</body>
+</html>
