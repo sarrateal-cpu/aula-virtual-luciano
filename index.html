@@ -2,72 +2,52 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Aula Virtual – Clase de Guitarra</title>
+  <title>Aula Virtual – Jamulus + Google Meet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
-    /* Fondo y tipografía */
+    /* Fondo de toda la página */
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
       background: url("Fondo.jpg") no-repeat center center fixed;
       background-size: cover;
+      margin: 0;
+      padding: 0;
     }
 
-    /* Overlay semi-transparente */
-    .overlay {
-      background-color: rgba(255,255,255,0.9);
-      min-height: 100vh;
-      padding: 30px 20px;
-    }
-
+    /* Overlay semi-transparente para resaltar texto sobre el fondo */
     .container {
-      max-width: 900px;
+      max-width: 800px;
       margin: auto;
+      padding: 30px 20px;
+      background-color: rgba(255,255,255,0.9);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
 
-    /* Textos */
-    h1 { font-size: 42px; margin-bottom: 20px; text-align: center; }
-    h2 { font-size: 34px; margin-top: 0; }
-    p, li { font-size: 22px; line-height: 1.6; }
+    h1, h2 {
+      color: #222;
+    }
 
-    /* Card */
+    /* Tarjetas */
     .card {
       background: white;
-      border-radius: 15px;
-      padding: 30px;
-      margin-bottom: 30px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
-    }
-
-    /* Logo */
-    .logo-icon {
-      display: block;
-      margin: 0 auto 20px auto;
-      width: 140px;
-    }
-
-    /* Importante */
-    .important {
-      background: #fff3cd;
-      border-left: 6px solid #f1b400;
-      padding: 22px;
       border-radius: 12px;
-      font-size: 22px;
-      margin: 20px 0;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
 
     /* Botones */
     .button {
       display: block;
       text-align: center;
-      padding: 22px;
-      margin: 25px 0;
+      padding: 18px;
+      margin: 18px 0;
       background: #1a73e8;
       color: white;
       text-decoration: none;
-      border-radius: 15px;
-      font-size: 24px;
+      border-radius: 10px;
+      font-size: 20px;
       font-weight: bold;
     }
 
@@ -75,139 +55,47 @@
       background: #1558b0;
     }
 
-    /* Notas */
+    ol li {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
     .note {
       background: #eef3fd;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 20px;
-      font-size: 20px;
+      padding: 18px;
+      border-radius: 10px;
+      font-size: 17px;
+      margin-top: 15px;
     }
 
-    /* Imagen de Jamulus */
-    .jamulus-image {
-      display: block;
-      width: 100%;
-      max-width: 850px;
-      margin: 20px auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-
-    /* Iconos de micrófono */
-    .mic-icons {
+    /* Centrado de texto general */
+    .center {
       text-align: center;
-      margin: 20px 0;
     }
 
-    .mic-icons img {
-      width: 60px;
-      margin: 0 20px;
-      vertical-align: middle;
-    }
-
-    /* Responsive */
+    /* Ajustes para móviles */
     @media (max-width: 600px) {
+      .container {
+        padding: 20px 15px;
+      }
       h1 { font-size: 32px; }
-      h2 { font-size: 28px; }
-      p, li { font-size: 20px; }
-      .button { font-size: 20px; padding: 16px; }
-      .mic-icons img { width: 50px; margin: 0 10px; }
+      h2 { font-size: 26px; }
+      ol li { font-size: 16px; }
+      .button { font-size: 18px; padding: 16px; }
+      .note { font-size: 16px; }
     }
   </style>
 </head>
 
 <body>
-  <div class="overlay">
-    <div class="container">
+  <div class="container">
 
-      <!-- PORTADA -->
-      <div class="card center">
-        <img src="logo-guitarra.png" class="logo-icon" alt="Guitarra clásica">
-        <h1>Aula Virtual</h1>
-        <p>Vamos a tocar juntos online.<br>Es más fácil de lo que parece.</p>
-        <p>Respirá tranquilo/a: si seguís estos pasos, va a funcionar.</p>
-      </div>
+    <h1 class="center">🎸 Aula Virtual</h1>
+    <p class="center">
+      Bienvenido/a. Desde esta página vas a poder:
+      <br>✔ Instalar Jamulus
+      <br>✔ Entrar a la clase por Google Meet
+    </p>
 
-      <!-- IDEA PRINCIPAL -->
-      <div class="card">
-        <h2>Antes de empezar (muy importante)</h2>
-        <div class="important">
-          🎶 <strong>Jamulus = audio musical</strong><br><br>
-          🎥 <strong>Google Meet = solo video</strong>
-        </div>
-        <p>Vamos a usar dos programas, pero cada uno cumple una sola función.</p>
-      </div>
-
-      <!-- JAMULUS -->
-      <div class="card">
-        <h2>Jamulus es el audio principal</h2>
-        <p>En Jamulus vas a:</p>
-        <ul>
-          <li><strong>Escucharme a mí</strong></li>
-          <li><strong>Tocar conmigo en tiempo real</strong></li>
-        </ul>
-        <p><strong>El audio musical se usa solo por Jamulus.</strong></p>
-        <p>No te preocupes por entender el programa. Solo necesitamos que reconozcas la pantalla.</p>
-        <img src="Jamulus.png" alt="Pantalla inicial de Jamulus" class="jamulus-image">
-      </div>
-
-      <!-- MICROFONOS -->
-      <div class="card">
-        <h2>Micrófonos (esto es CLAVE)</h2>
-        <div class="mic-icons">
-          <img src="Mic-on.png" alt="Micrófono activado">
-          <img src="Mic-off.png" alt="Micrófono apagado">
-        </div>
-        <div class="important">
-          ✔ En Jamulus → 🎤 <strong>Micrófono ACTIVADO</strong><br><br>
-          ✖ En Google Meet → 🎤 <strong>Micrófono APAGADO</strong>
-        </div>
-        <p>Repetimos porque es muy importante:</p>
-        <p>👉 <strong>En Google Meet dejá el micrófono apagado.</strong><br>
-           👉 <strong>El audio musical se usa solo por Jamulus.</strong></p>
-      </div>
-
-      <!-- INSTALAR JAMULUS -->
-      <div class="card">
-        <h2>Paso 1: Instalar Jamulus</h2>
-        <a class="button" href="https://jamulus.io/downloads/" target="_blank">Descargar Jamulus</a>
-        <ul>
-          <li>El archivo aparece abajo en el navegador.</li>
-          <li>Hacé click en <strong>Abrir</strong>.</li>
-          <li>Aceptá todo.</li>
-          <li>Esperá a que termine.</li>
-          <li>Abrí Jamulus.</li>
-        </ul>
-        <div class="note">No hace falta ir a “Descargas”.</div>
-      </div>
-
-      <!-- GOOGLE MEET -->
-      <div class="card">
-        <h2>Paso 2: Entrar a la clase (Google Meet)</h2>
-        <p>Cuando ya tengas Jamulus abierto:</p>
-        <a class="button" href="https://meet.google.com/naq-caja-cpw" target="_blank">Entrar a la clase</a>
-        <p>Google Meet lo usamos <strong>solo para vernos</strong>.</p>
-        <div class="note">Si es tu primera vez, permití cámara y micrófono. Después, acordate de apagar el micrófono.</div>
-      </div>
-
-      <!-- PRUEBA -->
-      <div class="card">
-        <h2>Ya dentro de la clase</h2>
-        <p>Ahora probamos si todo funciona.</p>
-        <p>Hablá y decí:<br><strong>“¿Me escuchás bien?”</strong></p>
-        <p>Usá auriculares. Eso ayuda mucho a que todo funcione mejor.</p>
-      </div>
-
-      <!-- CIERRE -->
-      <div class="card">
-        <h2>Todo listo</h2>
-        <p>Si me escuchás bien<br>y yo te escucho bien,</p>
-        <p><strong>está todo funcionando perfecto.</strong></p>
-        <p>No toques nada más.<br>Ahora podés concentrarte solo en tocar 🎶</p>
-      </div>
-
-    </div>
-  </div>
-</body>
-</html>
+    <div class="card">
+      <h2
